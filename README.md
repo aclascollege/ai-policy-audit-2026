@@ -77,7 +77,7 @@ guidance vs 46% of Global South flagships.
 | `ai-policy-audit-2026.csv` | CSV (UTF-8) | 186 rows, 14 columns |
 | `ai-policy-audit-2026.json` | JSON | Same data + dataset metadata |
 | `METHODOLOGY.md` | Markdown | How the audit was conducted, definitions, caveats |
-| `parse.py` | Python 3 | The exact script that generated CSV/JSON from the raw audit tables |
+| `parse.py` | Python 3 | Script that generated CSV/JSON from the audit tables (source tables not shipped; not independently reproducible from this repo alone) |
 | `CITATION.cff` | CFF | Machine-readable citation |
 
 ## Columns
@@ -89,7 +89,7 @@ guidance vs 46% of Global South flagships.
 | `rank` | QS 2026 rank as printed in source (`=17` = tied rank); null for Global South |
 | `university` | Institution name |
 | `country` | Country (Global South sample only) |
-| `official_domain` | University's official domain (QS samples only) |
+| `official_domain` | University's official domain (qs_top_50 rows only) |
 | `has_policy` | `YES` / `NO` / `UNCLEAR` |
 | `policy_url` | First URL found in the source cell (null when none) |
 | `policy_url_raw` | Original cell text when it contained more than just the URL |
@@ -109,7 +109,12 @@ guidance vs 46% of Global South flagships.
   portal-gated intranets and non-English sites are the main causes. True adoption is
   likely higher than 77%.
 - ~5 of the Global South YES cases are faculty/school-level rather than university-wide.
-- Snapshot date: **2026-10-14**. Policies are being published monthly; treat as a snapshot,
+- Evidence grades: `gs-22` (Ateneo) now links the university-shared guidelines PDF (via the official journal site); `gs-21` (UP) rests on secondary reporting — the principles are confirmed but no canonical document URL was located.
+- Snapshot date: **2026-10-14**.
+- Cross-dataset note: **Brown University** is `YES` here (Sheridan Center faculty guidance
+  page counted) but `UNCLEAR` in the companion `us-r1-ai-policy-audit-2026` (2026-10-17),
+  which applied a stricter university-wide-policy-only rule. Same institution, different
+  inclusion standards — the R1 audit's rule is the stricter, current one. Policies are being published monthly; treat as a snapshot,
   not a live registry. Contributions and corrections welcome via issues/PRs.
 
 ## License

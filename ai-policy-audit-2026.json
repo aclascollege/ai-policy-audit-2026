@@ -2720,7 +2720,7 @@
       "page_title": "Guidelines on responsible use of AI in classrooms — ten principles",
       "date_info": "2023",
       "scope": "Student-facing; teaching",
-      "note": "UP was the first major Philippine university with such principles. UP College of Law additionally adopted AI rules for first-year JD (Aug 2026, mb.com.ph): bans generative AI across writing stages, offline exams.",
+      "note": "[Evidence: secondary — \"UP Principles for Responsible and Trustworthy AI\" confirmed via UP news (up.edu.ph) and media reports; canonical document URL not located.] UP was the first major Philippine university with such principles. UP College of Law additionally adopted AI rules for first-year JD (Aug 2026, mb.com.ph): bans generative AI across writing stages, offline exams.",
       "policy_url_raw": "(on UP website; reported by philstarlife.com)",
       "name_overlap": false
     },
@@ -2732,12 +2732,12 @@
       "country": "Philippines",
       "official_domain": null,
       "has_policy": "YES",
-      "policy_url": null,
+      "policy_url": "https://drive.google.com/file/d/1qMxhAavyVYBSLkvHzPGO4TLC-jzzCg8-/view",
       "page_title": "GenAI in Higher Education — guidelines for teaching, learning, research, creative work",
       "date_info": "2024–2025",
       "scope": "Teaching; student-facing; research",
-      "note": "Course-level permitted use; student transparency required. Caveat: direct ateneo.edu URL not yet located — memo is confirmed published but canonical link pending.",
-      "policy_url_raw": "(university memo \"GenAI in Higher Education\"; reported by Inquirer columnist Queena Lee-Chua)",
+      "note": "University-wide GenAI guidelines (2024). Course-level permitted use; student transparency required. Caveat: direct ateneo.edu URL not yet located — memo is confirmed published but canonical link pending.",
+      "policy_url_raw": "University-shared PDF \"GenAI in Higher Education - Ateneo de Manila\", linked from the official Ateneo journal policies page (archium.ateneo.edu/jmgs/policies.html); ateneo.edu direct file URL is bot-protected (403 to automated clients)",
       "name_overlap": false
     },
     {
@@ -2860,7 +2860,7 @@
       "country": "China",
       "official_domain": null,
       "has_policy": "YES",
-      "policy_url": null,
+      "policy_url": "https://www.tsinghua.edu.cn/en/info/1244/14599.htm",
       "page_title": "Tsinghua University Guiding Principles for the Application of Artificial Intelligence in Education",
       "date_info": "Nov 2025",
       "scope": "Teaching; dissertations; student-facing",
