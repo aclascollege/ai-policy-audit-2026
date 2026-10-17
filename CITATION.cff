@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-title: Central Asia AI Education Audit 2026
+title: Global University AI Policy Audit 2026
 message: If you use this dataset, please cite it as below.
 type: dataset
 authors:
@@ -8,9 +8,11 @@ authors:
 version: 1.0.0
 date-released: 2026-10-17
 license: CC-BY-4.0
-url: https://aclas.si/data/central-asia-ai-education-audit-2026
+repository-code: https://github.com/study-intelligence/ai-policy-audit-2026
+url: https://aclas.si/data/ai-policy-audit-2026
 keywords:
   - AI policy
-  - Central Asia
   - higher education
+  - generative AI
+  - academic integrity
   - open data
