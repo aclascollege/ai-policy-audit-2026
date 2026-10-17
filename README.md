@@ -7,6 +7,51 @@ An open dataset of **186 audit records** covering whether universities publish o
 guidance on student/staff use of generative AI. Compiled 2026-10-14 by Study Intelligence
 (aclas.si) as research for *The Second Printing Press: Higher Education for the Intelligence Age*.
 
+
+## In plain English
+
+**What is this?** A spreadsheet answering one question for 186 universities
+worldwide: *does this school officially tell students and staff how they're
+allowed to use AI (like ChatGPT)?* We checked each university's own website,
+page by page.
+
+**Why does it matter?** If you're a student, it tells you whether your school
+has clear AI rules or is making it up as it goes. If you're a teacher or
+policymaker, it shows the global norm: almost nobody bans AI outright —
+instead, teachers set the rules per course and students must disclose AI use.
+
+**The one chart that matters:**
+
+![Universities publishing AI guidance, by sample](chart-policy-by-sample.png)
+
+Rich universities are far more likely to have AI rules (92% of the top 50)
+than universities in the Global South (46%). The AI policy gap *is* the
+wealth gap.
+
+## Try it (30 seconds)
+
+```python
+import pandas as pd
+df = pd.read_csv("ai-policy-audit-2026.csv")
+print(df.groupby("sample")["has_policy"].value_counts())
+```
+
+## FAQ
+
+**I'm a journalist. What's the headline?** "Not one of the world's top-100
+universities bans AI campus-wide. The debate about banning AI on campus is,
+empirically, over."
+
+**I'm a student. How do I use this?** Find your school's row, open the
+`policy_url`, and read what it actually allows. Rules differ wildly.
+
+**Can I trust a single row?** It's a snapshot from 2026-10-14 — policies
+change. 15 schools appear twice (flagged `name_overlap`); rows marked
+`UNCLEAR` mean "we couldn't verify", not "no policy".
+
+**How do I cite it?** See `CITATION.cff`, or: Atlanta College of Liberal
+Arts and Sciences (ACLAS) — Study Intelligence (aclas.si), 2026, CC-BY-4.0.
+
 ## Headline numbers
 
 | Sample | Rows | Published AI policy (YES) | No policy (NO) | Unclear |
