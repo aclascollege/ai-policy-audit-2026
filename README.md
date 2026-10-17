@@ -8,6 +8,9 @@ guidance on student/staff use of generative AI. Compiled 2026-10-14 by Study Int
 (aclas.si) as research for *The Second Printing Press: Higher Education for the Intelligence Age*.
 
 
+
+> **Also on Kaggle:** [aclascollege/ai-policy-audit-2026](https://www.kaggle.com/datasets/aclascollege/ai-policy-audit-2026) — download the CSV without git, or fork it straight into a notebook.
+
 ## In plain English
 
 **What is this?** A spreadsheet answering one question for 186 universities
