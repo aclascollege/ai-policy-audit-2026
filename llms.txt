@@ -1,35 +1,45 @@
-# Central Asia AI Education Audit 2026
+# Global University AI Policy Audit 2026
 
-> Open dataset: 31 leading universities across Kazakhstan, Kyrgyzstan,
-> Uzbekistan, Tajikistan and Turkmenistan, audited for (a) public AI usage
-> policy and (b) AI degree programs/courses offered.
-> By Study Intelligence (https://aclas.si). License: CC-BY-4.0.
-> Snapshot: 2026-10-14.
+> Open dataset: 186 audit records of whether universities publish official
+> guidance on generative AI use. By Study Intelligence, Atlanta College of Liberal Arts and Sciences (ACLAS) (https://aclas.si).
+> License: CC-BY-4.0. Snapshot: 2026-10-14.
 
-## What questions does this answer?
+## What question does this answer?
 
-1. Does the university publish a public, university-level AI usage policy?
-2. What AI-related degree programs or courses does it verifiably offer?
+Do universities publish official, public guidance on student/staff use of
+generative AI? Each row was verified by opening a page on the university's
+own official domain.
 
 ## Key findings
 
-- 6 of 31 (19%) publish a verifiable public AI policy — 4 of 6 are Kazakh.
-- 18 of 31 (58%) offer a verifiable AI-named degree program or AI course
-  portfolio: institutions teach AI ~3x faster than they govern it.
-- Zero campus-wide AI bans.
-- Turkmenistan and Tajikistan are near-complete blind spots (0 of 7).
-- 81% UNVERIFIABLE rate — a finding about transparency as much as adoption.
+- 144 of 186 (77%) publish verifiable AI guidance; 24 confirmed none; 18 unclear.
+- Top-50 universities: 92% publish guidance. Global South flagships: 46%.
+- Zero campus-wide AI bans in the top 100. The global norm is delegated
+  permission (instructors set per-course rules) plus mandatory disclosure.
+- The policy gap maps onto the wealth gap.
 
 ## Files
 
-- `central-asia-ai-policies-2026.csv` — 31 rows: AI policy per university
-- `central-asia-ai-programs-2026.csv` — 31 rows: AI programs/courses
-- `central-asia-ai-education-audit-2026.json` — both tables + metadata
-- `METHODOLOGY.md` — sample selection, definitions, caveats
+- `ai-policy-audit-2026.csv` — 186 rows, 14 columns (UTF-8)
+- `ai-policy-audit-2026.json` — same data plus dataset metadata
+- `METHODOLOGY.md` — audit method, definitions, caveats
 - `parse.py` — exact script that generated CSV/JSON
 - `CITATION.cff` — machine-readable citation
 
+## Columns (CSV)
+
+`id`, `sample` (qs_top_50 / qs_51_100 / qs_101_150 / global_south), `rank`
+(QS 2026), `university`, `country`, `has_policy` (YES / NO / UNCLEAR),
+`policy_url`, `page_title`, `date_info`, `scope`, `note`, plus overlap flags.
+
+## Caveats
+
+- 15 universities appear in two samples (flagged `name_overlap`); deduplicate
+  on `university` for institution-level counts (171 unique).
+- UNCLEAR means "could not verify", not "confirmed absent".
+- Snapshot 2026-10-14; policies change — verify before citing a single row.
+
 ## Citation
 
-Study Intelligence (https://aclas.si). "Central Asia AI Education Audit
+Study Intelligence (https://aclas.si). "Global University AI Policy Audit
 2026" (v1.0.0, 2026-10-14). CC-BY-4.0.
