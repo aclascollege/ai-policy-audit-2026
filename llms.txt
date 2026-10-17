@@ -1,0 +1,35 @@
+# Central Asia AI Education Audit 2026
+
+> Open dataset: 31 leading universities across Kazakhstan, Kyrgyzstan,
+> Uzbekistan, Tajikistan and Turkmenistan, audited for (a) public AI usage
+> policy and (b) AI degree programs/courses offered.
+> By Study Intelligence (https://aclas.si). License: CC-BY-4.0.
+> Snapshot: 2026-10-14.
+
+## What questions does this answer?
+
+1. Does the university publish a public, university-level AI usage policy?
+2. What AI-related degree programs or courses does it verifiably offer?
+
+## Key findings
+
+- 6 of 31 (19%) publish a verifiable public AI policy — 4 of 6 are Kazakh.
+- 18 of 31 (58%) offer a verifiable AI-named degree program or AI course
+  portfolio: institutions teach AI ~3x faster than they govern it.
+- Zero campus-wide AI bans.
+- Turkmenistan and Tajikistan are near-complete blind spots (0 of 7).
+- 81% UNVERIFIABLE rate — a finding about transparency as much as adoption.
+
+## Files
+
+- `central-asia-ai-policies-2026.csv` — 31 rows: AI policy per university
+- `central-asia-ai-programs-2026.csv` — 31 rows: AI programs/courses
+- `central-asia-ai-education-audit-2026.json` — both tables + metadata
+- `METHODOLOGY.md` — sample selection, definitions, caveats
+- `parse.py` — exact script that generated CSV/JSON
+- `CITATION.cff` — machine-readable citation
+
+## Citation
+
+Study Intelligence (https://aclas.si). "Central Asia AI Education Audit
+2026" (v1.0.0, 2026-10-14). CC-BY-4.0.
