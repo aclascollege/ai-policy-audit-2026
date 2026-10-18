@@ -1,7 +1,5 @@
 # Global University AI Policy Audit 2026
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23442103.svg)](https://doi.org/10.5281/zenodo.23442103) [![Kaggle](https://img.shields.io/badge/Kaggle-Dataset-20BEFF?logo=kaggle&logoColor=white)](https://www.kaggle.com/datasets/aclascollege/ai-policy-audit-2026) [![Hugging Face](https://img.shields.io/badge/%F0%9F%A4%97_Hugging_Face-Dataset-yellow)](https://huggingface.co/datasets/ACLASCollege/ai-policy-audit-2026)
-
 > **Atlanta College of Liberal Arts and Sciences (ACLAS)** — published as part of [Study Intelligence](https://aclas.si), the university's open research program · [aclas.college](https://aclas.college)
 
 
@@ -79,7 +77,7 @@ guidance vs 46% of Global South flagships.
 | `ai-policy-audit-2026.csv` | CSV (UTF-8) | 186 rows, 14 columns |
 | `ai-policy-audit-2026.json` | JSON | Same data + dataset metadata |
 | `METHODOLOGY.md` | Markdown | How the audit was conducted, definitions, caveats |
-| `parse.py` | Python 3 | Script that generated CSV/JSON from the audit tables (source tables not shipped; not independently reproducible from this repo alone) |
+| `parse.py` | Python 3 | The exact script that generated CSV/JSON from the raw audit tables |
 | `CITATION.cff` | CFF | Machine-readable citation |
 
 ## Columns
@@ -91,7 +89,7 @@ guidance vs 46% of Global South flagships.
 | `rank` | QS 2026 rank as printed in source (`=17` = tied rank); null for Global South |
 | `university` | Institution name |
 | `country` | Country (Global South sample only) |
-| `official_domain` | University's official domain (qs_top_50 rows only) |
+| `official_domain` | University's official domain (QS samples only) |
 | `has_policy` | `YES` / `NO` / `UNCLEAR` |
 | `policy_url` | First URL found in the source cell (null when none) |
 | `policy_url_raw` | Original cell text when it contained more than just the URL |
@@ -111,12 +109,7 @@ guidance vs 46% of Global South flagships.
   portal-gated intranets and non-English sites are the main causes. True adoption is
   likely higher than 77%.
 - ~5 of the Global South YES cases are faculty/school-level rather than university-wide.
-- Evidence grades: `gs-22` (Ateneo) now links the university-shared guidelines PDF (via the official journal site); `gs-21` (UP) rests on secondary reporting — the principles are confirmed but no canonical document URL was located.
-- Snapshot date: **2026-10-14**.
-- Cross-dataset note: **Brown University** is `YES` here (Sheridan Center faculty guidance
-  page counted) but `UNCLEAR` in the companion `us-r1-ai-policy-audit-2026` (2026-10-17),
-  which applied a stricter university-wide-policy-only rule. Same institution, different
-  inclusion standards — the R1 audit's rule is the stricter, current one. Policies are being published monthly; treat as a snapshot,
+- Snapshot date: **2026-10-14**. Policies are being published monthly; treat as a snapshot,
   not a live registry. Contributions and corrections welcome via issues/PRs.
 
 ## License
@@ -131,7 +124,7 @@ guidance vs 46% of Global South flagships.
   title = {Global University AI Policy Audit 2026},
   year = {2026},
   publisher = {Study Intelligence (aclas.si)},
-  doi = {pending},
+  doi = {10.5281/zenodo.23442103},
   url = {https://aclas.si/data/ai-policy-audit-2026}
 }
 ```
